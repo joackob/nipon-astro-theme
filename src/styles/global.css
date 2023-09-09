@@ -1,0 +1,110 @@
+/*
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
+body {
+  font-family: Verdana, sans-serif;
+}
+
+/* for markdown styles */
+article.article-md h1,
+article.article-md h2,
+article.article-md h3,
+article.article-md h4,
+article.article-md h5,
+article.article-md h6 {
+  font-weight: bold;
+  margin: 1rem 0 0.5rem 0;
+}
+
+article.article-md {
+  padding-bottom: 1rem;
+}
+
+article.article-md h1 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+
+article.article-md h2 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+article.article-md h3 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+article.article-md h4 {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+article.article-md h5 {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+article.article-md h6 {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+article.article-md code {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+article.article-md img {
+  margin: 0.5rem auto;
+}
+
+article.article-md blockquote {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 0.25rem solid #ccc;
+}
+
+article.article-md table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+}
+
+article.article-md table th,
+article.article-md table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+article.article-md table th {
+  font-weight: bold;
+}
+
+article.article-md pre {
+  padding: 1rem 0 1rem 0;
+  overflow-x: auto;
+}
+
+article.article-md ul {
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+article.article-md ol {
+  list-style: decimal;
+  margin-left: 1rem;
+}
+
+article.article-md p {
+  margin: 0.5rem 0;
+}
+
+article.article-md a {
+  font-weight: bold;
+}

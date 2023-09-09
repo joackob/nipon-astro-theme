@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Page.astro";
+
+import { getCollection } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+
+const posts = (await getCollection("blog")).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+const lastPost = posts[0];
+const { Content } = await posts[0].render();
+---
+
+<Layout>
+	<article class="article-md">
+		<h1 class="text-3xl font-bold my-4">{lastPost.data.title}</h1>
+		<FormattedDate date={lastPost.data.pubDate} />
+		<img
+			src={lastPost.data.heroImage}
+			alt="hero image"
+			class="w-full my-4"
+		/>
+		<p>{lastPost.data.description}</p>
+		<Content />
+	</article>
+</Layout>
