@@ -4,3 +4,4 @@
 export const SITE_TITLE = "Joacko Blog";
 export const SITE_DESCRIPTION =
   "Ingeniería de Software, Ciencia de datos, Docencia y Programación";
+export const SITE_URL = "";

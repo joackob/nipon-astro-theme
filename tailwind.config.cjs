@@ -1,12 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+// red for icons: #e85e56
+// white for background and fonts light: #f4e9dc
+// black for background and fonts dark: #494949
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
       colors: {
         primary: "#21273a",
-        secondary: "#e8eef1",
-        tertiary: "#ff8427",
+        light: "#f4e9dc",
+        dark: "#494949",
       },
     },
   },
