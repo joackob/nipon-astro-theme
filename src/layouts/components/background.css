@@ -1,0 +1,21 @@
+div.bg-grid-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". . tr"
+    ". c ."
+    "bl . .";
+}
+
+div.item-a {
+  grid-area: tr;
+}
+div.item-b {
+  grid-area: c;
+}
+
+div.item-c {
+  grid-area: bl;
+}
