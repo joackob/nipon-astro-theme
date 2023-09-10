@@ -1,8 +1,8 @@
 ---
 import Head from "./components/head.astro";
 import Header from "./components/header.astro";
-import Profile from "../components/HeroProfile.astro";
-import Nav from "../components/Nav.astro";
+import Background from "./components/background.astro";
+
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config/consts";
 
 export interface Props {
@@ -17,12 +17,12 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION }: Props =
 <!DOCTYPE html>
 <html lang="en">
   <Head title={title} description={description} />
-  <body class="bg-primary text-secondary font-sans mx-4">
-    <Header title={title} />
-    <main class="max-w-xl mx-auto">
-      <Profile />
-      <Nav />
-      <slot />
-    </main>
+  <body class="bg-light">
+    <Background>
+      <Header />
+      <main class="max-w-xl mx-auto">
+        <slot />
+      </main>
+    </Background>
   </body>
 </html>
