@@ -19,3 +19,13 @@ div.item-b {
 div.item-c {
   grid-area: bl;
 }
+/* for background */
+div.bg-pattern {
+  background-color: #f4e9dc;
+  opacity: 0.8;
+  background: linear-gradient(135deg, #49494955 25%, transparent 25%) -4px 0/
+      8px 8px,
+    linear-gradient(225deg, #494949 25%, transparent 25%) -4px 0/ 8px 8px,
+    linear-gradient(315deg, #49494955 25%, transparent 25%) 0px 0/ 8px 8px,
+    linear-gradient(45deg, #494949 25%, #f4e9dc 25%) 0px 0/ 8px 8px;
+}
