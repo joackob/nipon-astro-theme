@@ -3,7 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Profile from "../components/HeroProfile.astro";
 import Nav from "../components/Nav.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config/consts";
 
 export interface Props {
   title?: string;
@@ -40,4 +40,5 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION }: Props =
       <slot />
     </main>
   </body>
+  ../config/consts
 </html>
