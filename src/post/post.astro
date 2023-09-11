@@ -1,0 +1,22 @@
+---
+import "./post.css";
+import type { CollectionEntry } from "astro:content";
+interface Props {
+  post: CollectionEntry<"posts">;
+}
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<article>
+  <header class="mt-4">
+    <h1 class="capitalize text-dark font-medium text-3xl">
+      {post.data.title}
+    </h1>
+  </header>
+  <main class="bg-dark rounded-3xl mt-4 py-8 px-4">
+    <div class="border-t border-t-light py-4 text-light body-article">
+      <Content />
+    </div>
+  </main>
+</article>

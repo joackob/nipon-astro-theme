@@ -1,0 +1,101 @@
+/* for markdown styles */
+div.body-article h1,
+div.body-article h2,
+div.body-article h3,
+div.body-article h4,
+div.body-article h5,
+div.body-article h6 {
+  font-weight: bold;
+  margin: 1rem 0 0.5rem 0;
+}
+
+div.body-article {
+  padding-bottom: 1rem;
+}
+
+div.body-article h1 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+
+div.body-article h2 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+div.body-article h3 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+div.body-article h4 {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+div.body-article h5 {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+div.body-article h6 {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+div.body-article code {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+div.body-article img {
+  margin: 0.5rem auto;
+}
+
+div.body-article blockquote {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 0.25rem solid #ccc;
+}
+
+div.body-article table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+}
+
+div.body-article table th,
+div.body-article table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+div.body-article table th {
+  font-weight: bold;
+}
+
+div.body-article pre {
+  padding: 1rem 0 1rem 0;
+  overflow-x: auto;
+}
+
+div.body-article ul {
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+div.body-article ol {
+  list-style: decimal;
+  margin-left: 1rem;
+}
+
+div.body-article p {
+  margin: 0.5rem 0;
+}
+
+div.body-article a {
+  font-weight: bold;
+}

@@ -9,8 +9,10 @@ const { post }: Props = Astro.props;
 ---
 
 <div class="border-b-light border-b mb-4 pb-4">
-  <h1 class="text-3xl text-light">{post.data.title}</h1>
-  <p class="text-light mt-2 font-light">{post.data.description}</p>
+  <h1 class="text-3xl text-light font-medium capitalize">{post.data.title}</h1>
+  <p class="text-light mt-2 font-light leading-5">
+    {post.data.description}
+  </p>
   <div class="flex justify-end">
     <a href={`/posts/${post.slug}`}>
       <ArrowRightIcon />
