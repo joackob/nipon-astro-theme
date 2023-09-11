@@ -1,0 +1,25 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/main-layout.astro";
+import Card from "../../posts/components/post-card.astro";
+
+const posts = await getCollection("posts");
+---
+
+<Layout>
+  <section>
+    <header class="mt-4">
+      <h2 class="text-2xl font-bold">Select your history</h2>
+      <h1 class="text-4xl font-bold">Of Your Choice</h1>
+    </header>
+    <main class="mt-4 bg-dark rounded-3xl py-8 px-4">
+      {
+        posts.map((post) => {
+          return (
+            <Card title={post.data.title} description={post.data.description} />
+          );
+        })
+      }
+    </main>
+  </section>
+</Layout>
