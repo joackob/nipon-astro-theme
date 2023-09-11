@@ -13,6 +13,9 @@ const { post }: Props = Astro.props;
   <p class="text-light mt-2 font-light leading-5">
     {post.data.description}
   </p>
+  <p class="text-light font-light mt-2">
+    {post.data.publicationDate}
+  </p>
   <div class="flex justify-end">
     <a href={`/posts/${post.slug}`}>
       <ArrowRightIcon />
