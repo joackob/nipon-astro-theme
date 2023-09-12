@@ -13,6 +13,6 @@ type Props = CollectionEntry<"posts">;
 const post = Astro.props;
 ---
 
-<Layout>
+<Layout title={post.data.title} description={post.data.description}>
   <Post post={post} />
 </Layout>
