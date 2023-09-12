@@ -1,7 +1,7 @@
 ---
 title: "Markdown Style Guide"
 description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
-publicationDate: "June 27 2023"
+pubDate: "June 27 2023"
 ---
 
 # Introduction

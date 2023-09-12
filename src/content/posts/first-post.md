@@ -1,7 +1,7 @@
 ---
 title: "First post"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-publicationDate: "May 27 2023"
+pubDate: "May 27 2023"
 ---
 
 # Chapter 1

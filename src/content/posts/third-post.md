@@ -1,7 +1,7 @@
 ---
 title: "Third post"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-publicationDate: "March 27 2023"
+pubDate: "March 27 2023"
 ---
 
 # Foreword

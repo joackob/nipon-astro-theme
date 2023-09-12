@@ -4,7 +4,10 @@ const posts = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    publicationDate: z.string(),
+    pubDate: z
+      .string()
+      .or(z.date())
+      .transform((val) => new Date(val)),
   }),
 });
 

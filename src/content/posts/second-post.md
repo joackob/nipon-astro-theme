@@ -1,7 +1,7 @@
 ---
 title: "Second post"
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-publicationDate: "October 27 2023"
+pubDate: "October 27 2023"
 ---
 
 # Section 1
