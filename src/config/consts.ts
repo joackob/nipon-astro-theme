@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = "Your History";
 export const SITE_DESCRIPTION = "A template for writters";
-export const SITE_URL = "";
+export const SITE_URL = "/nipon-astro-theme";
