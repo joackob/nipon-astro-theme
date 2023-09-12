@@ -19,8 +19,12 @@ const { title, description, image = placeholderSocial } = Astro.props;
   <!-- Global Metadata -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/svg+xml" href={`${SITE_URL}/favicon.svg`} />
+  <link
+    rel="shortcut icon"
+    href={`${SITE_URL}/favicon.ico`}
+    type="image/x-icon"
+  />
   <meta name="generator" content={Astro.generator} />
 
   <!-- Canonical URL -->
@@ -46,10 +50,24 @@ const { title, description, image = placeholderSocial } = Astro.props;
   <meta property="twitter:image" content={new URL(image, Astro.url)} />
 
   <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href={`${SITE_URL}/apple-touch-icon.png`}
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href={`${SITE_URL}/favicon-32x32.png`}
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href={`${SITE_URL}/favicon-16x16.png`}
+  />
+  <link rel="manifest" href={`${SITE_URL}/site.webmanifest`} />
 
   <!-- katex min -->
   <link
