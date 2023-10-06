@@ -1,5 +1,5 @@
 ---
-import "./post.css";
+// import "./post.css";
 import type { CollectionEntry } from "astro:content";
 interface Props {
   post: CollectionEntry<"posts">;
@@ -8,7 +8,9 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<article>
+<article
+  class="prose-sm md:prose-base prose-headings:text-light prose-img:mx-auto prose-blockquote:text-light prose-table:mx-auto prose-blockquote:border-l-light prose-blockquote:border-l"
+>
   <header class="px-4 mt-4 w-3/4">
     <h1 class="capitalize text-dark font-medium text-3xl">
       {post.data.title}
