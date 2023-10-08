@@ -15,7 +15,7 @@
     "@astrojs/sitemap": "^2.0.2",
     "@astrojs/tailwind": "^4.0.0",
     "astro": "^2.10.15",
-    "rehype-katex": "6.0.3",
+    "rehype-katex": "7.0.0",
     "remark-math": "5.1.1",
     "tailwindcss": "^3.3.3"
   },
