@@ -14,7 +14,18 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION }: Props =
   Astro.props;
 ---
 
-<!DOCTYPE html>
+<style is:global>
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f4e9dc;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #494949;
+  }
+</style>
+
 <html lang="en">
   <Head title={title} description={description} />
   <body class="bg-light">
